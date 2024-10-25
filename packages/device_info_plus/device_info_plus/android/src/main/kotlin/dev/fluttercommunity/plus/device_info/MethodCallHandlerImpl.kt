@@ -66,6 +66,7 @@ internal class MethodCallHandlerImpl(
             build["version"] = version
             build["isLowRamDevice"] = activityManager.isLowRamDevice
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                @SuppressLint("MissingPermission")
                 build["serialNumber"] = try {
                     Build.getSerial()
                 } catch (ex: SecurityException) {
