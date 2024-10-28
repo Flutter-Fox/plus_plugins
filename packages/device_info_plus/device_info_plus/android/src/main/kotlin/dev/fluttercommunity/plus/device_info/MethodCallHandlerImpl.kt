@@ -11,6 +11,7 @@ import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler
 import kotlin.collections.HashMap
+import android.annotation.SuppressLint
 
 /**
  * The implementation of [MethodChannel.MethodCallHandler] for the plugin. Responsible for
